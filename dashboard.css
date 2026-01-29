@@ -1,0 +1,103 @@
+/* ----------------- Sidebar ----------------- */
+.sidebar {
+  width: 250px;
+  background-color: rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.sidebar h2 {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.menu-item {
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.menu-item:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ----------------- Main Content ----------------- */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* ----------------- Quick Access Cards ----------------- */
+.quick-access {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.25);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #fff;
+  background: #ff5f6d;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #ffc371;
+  transform: scale(1.05);
+}

@@ -1,0 +1,23 @@
+.design-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.tool-card {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.25);
+}
+
+.tool-card h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
