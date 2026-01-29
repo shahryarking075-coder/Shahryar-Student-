@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearSoch WORLD - Settings</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="shahryar.jpg" alt="Founder" class="profile-photo">
+      <h2>ClearSoch WORLD</h2>
+    </div>
+    <nav class="menu">
+      <a href="index.html" class="menu-item">🏠 Dashboard</a>
+      <a href="design.html" class="menu-item">🎨 Design Studio</a>
+      <a href="imageGen.html" class="menu-item">🖼️ Text → Image</a>
+      <a href="science.html" class="menu-item">🧪 Science Lab</a>
+      <a href="login.html" class="menu-item logout">🚪 Logout</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header>
+      <h1>Settings</h1>
+      <p>Customize your ClearSoch WORLD experience</p>
+    </header>
+
+    <section class="settings-panel">
+      <div class="setting-item">
+        <label>Theme:</label>
+        <select id="themeSelect">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="gradient">Gradient</option>
+        </select>
+      </div>
+
+      <div class="setting-item">
+        <label>Accent Color:</label>
+        <input type="color" id="accentColor" value="#ff5f6d">
+      </div>
+
+      <div class="setting-item">
+        <label>Font Size:</label>
+        <input type="range" min="12" max="24" id="fontSize" value="16">
+      </div>
+
+      <div class="setting-item">
+        <label>Enable Animations:</label>
+        <input type="checkbox" id="animationsToggle" checked>
+      </div>
+
+      <div class="setting-item">
+        <label>Save History:</label>
+        <input type="checkbox" id="historyToggle" checked>
+      </div>
+    </section>
+
+    <button id="saveSettings" class="btn">Save Settings</button>
+  </main>
+
+  <script src="js/settings.js"></script>
+</body>
+</html>
